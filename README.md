@@ -1,0 +1,3 @@
+This project is about reconstructing curves (boundaries of 2D images) from intersections of cutting lines with the boundary of the image. It is a signed distance based reconstruction where we are given the signed distance data on the cutting lines and we are using the Hermite interpolation to interpolate this data inside. 
+First, we consider the partitioning of the bounding box into convex polygons by cutting lines and then using the transfinite mean value interpolation to interpolate the signed distance data inside the polygon. 
+Then we are using the marching triangles algorithm to extarct the zero level set. 
